@@ -27,7 +27,7 @@
 		 * depends on how you want to format things
 		 */
 	?>
-	<div>
+	<div class="grid">
 		<?php
 
 			// check if the repeater field has rows of data
@@ -36,15 +36,16 @@
 			 	// loop through the rows of data
 			    while ( have_rows('artists') ) : the_row(); ?>
 					
-			        	<img src="<?php the_sub_field('photo'); ?>" />
-			        
-			        <p>
-			        	<?php the_sub_field('name'); ?>
-			        </p>
-			        <p>
-			        	<?php the_sub_field('description'); ?>
-			        </p>
-
+					<div class="grid-item">
+				        <img src="<?php the_sub_field('photo'); ?>" />
+				        
+				        <p>
+				        	<?php the_sub_field('name'); ?>
+				        </p>
+				        <p>
+				        	<?php the_sub_field('description'); ?>
+				        </p>
+					</div>
 			  <?php  endwhile;
 
 			else :
@@ -54,6 +55,5 @@
 			endif;
 
 			?>
-</p>
 	</div>
 </article>

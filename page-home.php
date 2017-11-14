@@ -5,7 +5,6 @@
 
 get_header(); ?>
 
-
 <?php
 	while ( have_posts() ) : the_post();
 
@@ -13,7 +12,6 @@ get_header(); ?>
 
 	endwhile;
 ?>
-
 
 <?php
 get_footer();

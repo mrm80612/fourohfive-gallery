@@ -445,7 +445,7 @@ template {
 }
 
 body {
-  background: #658eb4;
+  background: #ffffff;
 }
 
 .img-fluid {
@@ -454,9 +454,10 @@ body {
 }
 
 .global-nav {
-  background: #ffffff;
+  background: #2C2C2C;
   display: block;
   width: 100%;
+  height: 64px;
 }
 
 .global-nav ul {
@@ -503,19 +504,19 @@ body {
 }
 
 .global-nav a:link {
-  color: #65b475;
+  color: #ffffff;
 }
 
 .global-nav a:hover {
-  color: #b4ab65;
+  color: #ffffff;
 }
 
 .global-nav a:visited {
-  color: #9465b4;
+  color: #ffffff;
 }
 
 .global-nav a:active {
-  color: #ffffff;
+  color: #eaeaea;
 }
 
 /* Small menu. */
@@ -558,7 +559,15 @@ html {
 }
 
 .container {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 12px;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 24px;
 }

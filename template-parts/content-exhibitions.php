@@ -1,46 +1,87 @@
 <?php
-	the_post_thumbnail('full', ['class' => 'img-fluid']);
+/**
+ * Template part for displaying page content in page.php
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ * @package fourohfive
+ */
+
 ?>
 
-<h1>
+<article id="post-<?php the_ID(); ?>" <?php post_class('container'); ?>>
 	<?php
-		the_field('title');
+		/**
+		 * Gets the featured image.
+		 * @link https://developer.wordpress.org/reference/functions/the_post_thumbnail/
+		 */
+		the_post_thumbnail('full', ['class' => 'img-fluid']);
 	?>
-</h1>
 
-<p>
 	<?php
-		the_field('description');
+		/**
+		 * The <div> below is surrounding your post content. You can change it from a <div>
+		 * to something else if you wish. You can also add classes to it, etc. It all
+		 * depends on how you want to format things
+		 */
 	?>
+	<div>
+		<?php
+
+			// check if the repeater field has rows of data
+			if( have_rows('current_exhibit') ):
+
+			 	// loop through the rows of data
+			    while ( have_rows('current_exhibit') ) : the_row(); ?>
+					
+			        	<img src="<?php the_sub_field('current_image'); ?>" />
+			        
+			        <p>
+			        	<?php the_sub_field('current_name'); ?>
+			        </p>
+			        <p>
+			        	<?php the_sub_field('current_range'); ?>
+			        </p>
+
+			  <?php  endwhile;
+
+			else :
+
+			    // no rows found
+
+			endif;
+
+			?>
 </p>
+	</div>
 
-<img src="<?php the_field('photo');?>" alt="">
+	<div>
+		<?php
 
-<?php
+			// check if the repeater field has rows of data
+			if( have_rows('past_exhibit') ):
 
-// check if the repeater field has rows of data
-if( have_rows('services') ):
+			 	// loop through the rows of data
+			    while ( have_rows('past_exhibit') ) : the_row(); ?>
+					
+			        	<img src="<?php the_sub_field('past_image'); ?>" />
+			        
+			        <p>
+			        	<?php the_sub_field('past_artist'); ?>
+			        </p>
+			        <p>
+			        	<?php the_sub_field('past_range'); ?>
+			        </p>
 
- 	// loop through the rows of data
-    while ( have_rows('services') ) : the_row();
+			  <?php  endwhile;
 
-	$image = get_sub_field('service_image') ?>
+			else :
 
-	<h2>
-        <?php the_sub_field('service_title'); ?>
-	</h2>
+			    // no rows found
 
-		<img src="<?php echo $image['url']; ?>"
-		aslt="<?php echo $image['alt']; ?>">
+			endif;
 
-    <?php endwhile; ?>
+			?>
+</p>
+	</div>
 
-<?php else : ?>
-
-    // no rows found
-
-<?php endif; ?>
-
-<?php
-	the_content();
-?>
+</article>

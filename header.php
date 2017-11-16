@@ -12,6 +12,7 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet"> 
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<?php wp_head(); ?>
@@ -19,7 +20,7 @@
 
 <body class="sticky-footer">
 
-	<a class="sr-only" href="#content"><?php echo 'Skip to content'; ?></a>
+	<!-- <a class="sr-only" href="#content"><?php echo 'Skip to content'; ?></a> -->
 
 	<header id="masthead">
 

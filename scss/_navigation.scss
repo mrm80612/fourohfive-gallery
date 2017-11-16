@@ -4,7 +4,6 @@
     background: $black;
     display: block;
     width: 100%;
-    height: 64px;
 }
 
 .global-nav ul {
@@ -46,8 +45,9 @@
 
 .global-nav a {
     display: block;
-    font-weight: bold;
+    font-weight: lighter;
     text-decoration: none;
+    padding: $spacer-3x;
 }
 
 .global-nav a:link {
@@ -80,11 +80,16 @@
     .global-nav {
         border-top: 1px solid $gray;
         border-bottom: 1px solid $gray;
+        height: 96px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .global-nav ul {
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     .global-nav li {

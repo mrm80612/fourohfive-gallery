@@ -24,7 +24,7 @@
 		 * depends on how you want to format things
 		 */
 	?>
-	<div>
+	<div class="d-flex justify-content-center">>
 		<?php
 
 			// check if the repeater field has rows of data
@@ -35,11 +35,12 @@
 					
 			        	<img src="<?php the_sub_field('current_image'); ?>" />
 			        
-			        <p>
+			        <h3>
 			        	<?php the_sub_field('current_name'); ?>
-			        </p>
+			        </h3>
 			        <p>
-			        	<?php the_sub_field('current_range'); ?>
+			        	<?php the_sub_field('current_start'); ?> - 
+			        	<?php the_sub_field('current_end'); ?>
 			        </p>
 
 			  <?php  endwhile;

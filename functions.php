@@ -116,13 +116,11 @@ function fourohfive_scripts() {
 add_action( 'wp_enqueue_scripts', 'fourohfive_scripts' );
 
 
-function my_acf_google_map_api( $api ){
+
+function my_acf_init() {
 	
-	$api['key'] = 'AIzaSyD2HLbo1l933aY-bC8kYokxHhsjb7NqIWw';
-	
-	return $api;
-	
+	acf_update_setting('google_api_key', 'AIzaSyD2HLbo1l933aY-bC8kYokxHhsjb7NqIWw');
 }
 
-add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
+add_action('acf/init', 'my_acf_init');
 

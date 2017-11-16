@@ -27,7 +27,7 @@
 		 * depends on how you want to format things
 		 */
 	?>
-	<div class="grid">
+	<div class="grid d-flex justify-content-center">
 		<?php
 
 			// check if the repeater field has rows of data

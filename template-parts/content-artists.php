@@ -8,7 +8,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('container'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('artists'); ?>>
 	<?php
 		/**
 		 * Gets the featured image.

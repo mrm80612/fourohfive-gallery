@@ -1,5 +1,11 @@
 // Styles for Nav Menus
 
+.homefont {
+    font-size: 1.75em;
+    text-align: center;
+    text-shadow: 2px 1px gray;
+}
+
 .global-nav {
     background: $black;
     display: block;

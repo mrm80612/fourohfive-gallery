@@ -19,4 +19,7 @@ html {
     max-width: $container;
     margin: 0 auto;
     padding: 0 $spacer-15x-x;
+    display: flex;
+    justify-content: center;
 }
+

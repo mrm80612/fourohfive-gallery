@@ -119,8 +119,10 @@ add_action( 'wp_enqueue_scripts', 'fourohfive_scripts' );
 
 function my_acf_init() {
 	
-	acf_update_setting('google_api_key', 'AIzaSyD2HLbo1l933aY-bC8kYokxHhsjb7NqIWw');
+	acf_update_setting('google_api_key', 'AIzaSyBpMNr5OiZPrwT6oi7NDVePZWv5B4y1d80');
 }
 
 add_action('acf/init', 'my_acf_init');
+
+
 

@@ -25,8 +25,9 @@
 
 			 	// loop through the rows of data
 			    while ( have_rows('current_exhibit') ) : the_row(); ?>
-					
+					<div>
 			        <img src="<?php the_sub_field('current_image'); ?>" />
+
 			        <h3 style="margin-left:2em;">
 			        	<?php the_sub_field('current_name'); ?>
 			        </h3>
@@ -34,6 +35,7 @@
 			        	<?php the_sub_field('current_start'); ?> - 
 			        	<?php the_sub_field('current_end'); ?>
 			        </p>
+			        </div>
 
 			  <?php  endwhile;
 

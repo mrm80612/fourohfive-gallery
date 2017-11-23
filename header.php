@@ -12,7 +12,7 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400,700" rel="stylesheet">  
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpMNr5OiZPrwT6oi7NDVePZWv5B4y1d80&callback=initMap"
   type="text/javascript"></script>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -56,4 +56,4 @@
 		 * We close it at the start of our footer.php fie.
 		 */
 	?>
-	<div id="content">
+	<div id="content" class="main">

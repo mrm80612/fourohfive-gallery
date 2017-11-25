@@ -457,6 +457,21 @@ html {
   max-width: 100%;
 }
 
+.responsive-embed {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+
+.responsive-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
 .footer {
   background: #2C2C2C;
   color: #ffffff;
@@ -621,6 +636,10 @@ html {
   background: #ffffff;
 }
 
+.mt-3 {
+  margin-top: 32px;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -657,7 +676,22 @@ main,
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   grid-gap: 24px;
+}
+
+@media screen and (min-width: 700px) {
+  .grid {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .grid-1-4 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 3fr;
+        grid-template-columns: 1fr 3fr;
+    grid-gap: 24px;
+  }
 }

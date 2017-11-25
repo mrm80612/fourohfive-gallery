@@ -22,7 +22,7 @@
 
 <body class="sticky-footer">
 
-	<header id="masthead">
+	<header id="masthead" class="masthead">
 
 		<?php
 

@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-<main>
+<main class="mt-3">
 
 	<?php
 	while ( have_posts() ) : the_post();

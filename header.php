@@ -22,8 +22,6 @@
 
 <body class="sticky-footer">
 
-	<!-- <a class="sr-only" href="#content"><?php echo 'Skip to content'; ?></a> -->
-
 	<header id="masthead">
 
 		<?php
@@ -49,11 +47,3 @@
 			?>
 		</nav>
 	</header>
-
-	<?php
-		/**
-		 * Don't delete that div — it acts as an anchor for the skip-nav above.
-		 * We close it at the start of our footer.php fie.
-		 */
-	?>
-	<div id="content" class="main">

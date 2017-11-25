@@ -10,8 +10,6 @@
 
 ?>
 
-			<?php /* Close the #content div from header.php */ ?>
-			</div>
 
 			<footer class="footer">
 				<p>Copyright &copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>. All rights reserved. </p>

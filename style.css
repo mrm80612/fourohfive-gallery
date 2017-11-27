@@ -473,7 +473,7 @@ html {
 }
 
 .footer {
-  background: #2C2C2C;
+  background: #73877e;
   color: #ffffff;
   display: -ms-flexbox;
   display: flex;
@@ -488,7 +488,7 @@ html {
 }
 
 .global-nav {
-  background: #2C2C2C;
+  background: #73877e;
   display: block;
   width: 100%;
 }

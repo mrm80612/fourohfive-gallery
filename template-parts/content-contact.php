@@ -3,6 +3,7 @@
 <div class="grid-1-4">
 	<div>
 		<h3>Address</h3>
+		<p>716 Traction Ave, </br> Los Angeles, CA 90013</p>
 	</div>
 		<div>
 			<div class="responsive-embed">

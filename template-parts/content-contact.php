@@ -3,7 +3,15 @@
 <div class="grid-1-4">
 	<div>
 		<h3>Address</h3>
-		<p>716 Traction Ave, </br> Los Angeles, CA 90013</p>
+		<p>716 Traction Ave, </br> Los Angeles, CA 90013 </br> (213) 627-7374 </p>
+		
+		<p>Sunday:  2–7PM </br> 
+		Monday:  Closed </br> 
+        Tuesday:  Closed </br> 
+		Wednesday:  2–8PM </br> 
+		Thursday:  2–8PM </br> 
+		Friday:  2–8PM </br> 
+		Saturday:  2–8PM</p>
 	</div>
 		<div>
 			<div class="responsive-embed">

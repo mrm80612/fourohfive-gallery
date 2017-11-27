@@ -18,7 +18,10 @@
 		 * depends on how you want to format things
 		 */
 	?>
-		<?php
+	<?php
+	the_content();
+?>
+		<!-- <?php
 
 			// check if the repeater field has rows of data
 			if( have_rows('current_exhibit') ):
@@ -45,6 +48,6 @@
 
 			endif;
 
-			?>
+			?> -->
 
 </article>

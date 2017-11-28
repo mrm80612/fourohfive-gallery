@@ -565,8 +565,8 @@ html {
   }
 
   .global-nav {
-    border-top: 1px solid #eaeaea;
-    border-bottom: 1px solid #eaeaea;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
     height: 96px;
     display: -ms-flexbox;
     display: flex;

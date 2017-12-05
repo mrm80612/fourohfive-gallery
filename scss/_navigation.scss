@@ -1,13 +1,44 @@
 // Styles for Nav Menus
 
-.homefont {
-    font-size: 1.75em;
+.homebutton {
+    font-size: 1.5em;
+    font-style: regular;
+    text-align: center;
+    text-shadow: 2px 1px gray;
+}
+
+.aboutbutton {
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 2px 1px gray;
+}
+
+.classesbutton {
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 2px 1px gray;
+}
+
+.schedulebutton {
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 2px 1px gray;
+}
+
+.pricingbutton {
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 2px 1px gray;
+}
+
+.contactbutton {
+    font-size: 1.5em;
     text-align: center;
     text-shadow: 2px 1px gray;
 }
 
 .global-nav {
-    background: $green;
+    background: $black;
     display: block;
     width: 100%;
 }
@@ -88,13 +119,13 @@
         border-bottom: 1px solid $white;
         height: 96px;
         display: flex;
-        justify-content: center;
+        justify-content: right;
         align-items: center;
     }
 
     .global-nav ul {
         display: flex;
-        justify-content: center;
+        justify-content: right;
         align-items: center;
     }
 

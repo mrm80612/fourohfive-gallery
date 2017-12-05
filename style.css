@@ -449,7 +449,7 @@ body {
 }
 
 html {
-  font-family: 'Alegreya Sans SC', sans-serif;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .img-fluid {
@@ -473,7 +473,7 @@ html {
 }
 
 .footer {
-  background: #73877e;
+  background: #2C2C2C;
   color: #ffffff;
   display: -ms-flexbox;
   display: flex;
@@ -481,14 +481,45 @@ html {
       justify-content: center;
 }
 
-.homefont {
-  font-size: 1.75em;
+.homebutton {
+  font-size: 1.5em;
+  font-style: regular;
+  text-align: center;
+  text-shadow: 2px 1px gray;
+}
+
+.aboutbutton {
+  font-size: 1.5em;
+  text-align: center;
+  text-shadow: 2px 1px gray;
+}
+
+.classesbutton {
+  font-size: 1.5em;
+  text-align: center;
+  text-shadow: 2px 1px gray;
+}
+
+.schedulebutton {
+  font-size: 1.5em;
+  text-align: center;
+  text-shadow: 2px 1px gray;
+}
+
+.pricingbutton {
+  font-size: 1.5em;
+  text-align: center;
+  text-shadow: 2px 1px gray;
+}
+
+.contactbutton {
+  font-size: 1.5em;
   text-align: center;
   text-shadow: 2px 1px gray;
 }
 
 .global-nav {
-  background: #73877e;
+  background: #2C2C2C;
   display: block;
   width: 100%;
 }
@@ -570,8 +601,8 @@ html {
     height: 96px;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
+    -ms-flex-pack: right;
+        justify-content: right;
     -ms-flex-align: center;
         align-items: center;
   }
@@ -579,8 +610,8 @@ html {
   .global-nav ul {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
+    -ms-flex-pack: right;
+        justify-content: right;
     -ms-flex-align: center;
         align-items: center;
   }
